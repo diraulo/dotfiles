@@ -1,0 +1,11 @@
+" Define bundles via Github repos
+
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'scrooloose/nerdtree'
+Bundle 'mattn/emmet-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'mustache/vim-mustache-handlebars'
+
