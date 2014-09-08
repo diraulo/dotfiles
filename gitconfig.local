@@ -1,7 +1,20 @@
-[alias]
-  l = log --pretty=colored
-[pretty]
-  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [user]
   name = Raoul DIFFOUO
   email = diraulo@gmail.com
+[core]
+	autocrlf = input
+[push]
+	default = simple
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+[color]
+	ui = true
+[http]
+	postBuffer = 65536000
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[alias]
+	s = status -s
+	lg = log --oneline --decorate --graph --all --pretty=colored
