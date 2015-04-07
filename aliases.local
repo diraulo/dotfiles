@@ -1,0 +1,4 @@
+# Unix
+alias ls='ls --color=auto'
+alias git='hub'
+alias hibernate='sudo pm-hibernate'

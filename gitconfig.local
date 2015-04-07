@@ -1,20 +1,15 @@
 [user]
   name = Raoul DIFFOUO
   email = diraulo@gmail.com
-[core]
-	autocrlf = input
-[push]
-	default = simple
-[pull]
-	rebase = true
 [rerere]
-	enabled = true
-[color]
-	ui = true
+  enabled = true
 [http]
-	postBuffer = 65536000
+  postBuffer = 65536000
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [alias]
-	s = status -s
-	lg = log --oneline --decorate --graph --all --pretty=colored
+  s = status -s
+  lg = log --oneline --decorate --graph --all --pretty=colored
+[credential]
+  helper = cache --timeout=3600
+

@@ -8,4 +8,5 @@ Bundle 'mattn/emmet-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'mustache/vim-mustache-handlebars'
-
+Bundle 'flazz/vim-colorschemes'
+Bundle 'bling/vim-airline'
