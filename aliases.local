@@ -3,8 +3,8 @@ alias ls='ls --color=auto'
 alias git='hub'
 
 alias be="bundle exec"
-alias rake="be rake"
-alias rspec="be rspec"
+# alias rake="be rake"
+# alias rspec="be rspec"
 alias dbmigrate="rake db:migrate"
 alias dbrollback="rake db:rollback"
 alias rg="rails generate"

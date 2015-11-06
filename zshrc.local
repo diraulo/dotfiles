@@ -1,3 +1,5 @@
+export PATH="./bin:$PATH"
+
 # Configure cdpath
 cdpath=(
   ~
@@ -8,6 +10,8 @@ cdpath=(
   ~/projects/work/microsmart/ubiquity
   ~/projects/work/econet
   ~/projects/thoughtbot
+  ~/projects/thinkbots/projects
+  ~/projects/makersacademy
   ~/vagrant
 )
 
@@ -36,3 +40,7 @@ source ~/.git-flow-completion/git-flow-completion.zsh
 
 # Terminal color mode
 export TERM=screen-256color-bce
+export TESTING_MAKERS=working
+
+export NVM_DIR="/home/diraul/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
