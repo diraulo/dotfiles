@@ -1,14 +1,27 @@
 # Unix
-alias ls='ls --color=auto'
+alias ls='ls -G'
+alias ll='ls -lahG'
+
+alias ...='cd ../..'
+alias h='cd ~'
+alias c='clear'
+
+alias hibernate='sudo pm-hibernate'
+alias tagrails='ctags -R --exclude=.git --exclude=log --exclude=app/assets --exclude=vendor'
+
+# Git
 alias git='hub'
 
+# Ruby, Rails
 alias be="bundle exec"
 # alias rake="be rake"
-# alias rspec="be rspec"
+alias rspec="be rspec"
+alias cucumber="be cucumber"
 alias dbmigrate="rake db:migrate"
 alias dbrollback="rake db:rollback"
 alias rg="rails generate"
 alias rr="rails runner"
 alias rc="rails console"
 
-alias hibernate='sudo pm-hibernate'
+#thefuck
+eval $(thefuck --alias)
