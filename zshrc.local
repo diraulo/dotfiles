@@ -3,15 +3,16 @@ export PATH="./bin:$PATH"
 # Configure cdpath
 cdpath=(
   ~
+  ~/Developer
+  ~/Developer/agileventures
+  ~/Developer/craftacademy
+  ~/Developer/diraulinc
+  ~/Developer/thinkbots
+  ~/Developer/work
+  ~/Developer/work/econet
+  ~/Developer/work/microsmart
+  ~/Developer/work/microsmart/ubiquity
   ~/projects
-  ~/projects/diraulinc
-  ~/projects/work
-  ~/projects/work/microsmart
-  ~/projects/work/microsmart/ubiquity
-  ~/projects/work/econet
-  ~/projects/thoughtbot
-  ~/projects/thinkbots/projects
-  ~/projects/craftacademy
   ~/vagrant
 )
 
