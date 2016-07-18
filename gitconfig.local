@@ -1,6 +1,7 @@
 [user]
   name = Raoul DIFFOUO
   email = diraulo@gmail.com
+  signingkey = F812EC9A
 [rerere]
   enabled = true
 [http]
@@ -12,4 +13,5 @@
   lg = log --oneline --decorate --graph --all --pretty=colored
 [credential]
   helper = cache --timeout=3600
-
+[commit]
+  gpgsign = true
