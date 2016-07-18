@@ -11,7 +11,7 @@ cdpath=(
   ~/projects/work/econet
   ~/projects/thoughtbot
   ~/projects/thinkbots/projects
-  ~/projects/makersacademy
+  ~/projects/craftacademy
   ~/vagrant
 )
 
@@ -44,3 +44,20 @@ export TESTING_MAKERS=working
 
 export NVM_DIR="/home/diraul/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# load rbenv if available
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init -)"
+fi
+
+# Haskell
+export PATH="$HOME/Library/Haskell/bin:$PATH"
+
+# Ansible
+export ANSIBLE_HOSTS=~/ansible/hosts
+
+# Java
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1_1/
+export PATH=$PATH:/Applications/Genymotion\ Shell.app/Contents/MacOS/:/Applications/Genymotion.app/Contents/MacOS/
