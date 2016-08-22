@@ -5,13 +5,10 @@ cdpath=(
   ~
   ~/Developer
   ~/Developer/agileventures
+  ~/Developer/ca-labs
   ~/Developer/craftacademy
   ~/Developer/diraulinc
   ~/Developer/thinkbots
-  ~/Developer/work
-  ~/Developer/work/econet
-  ~/Developer/work/microsmart
-  ~/Developer/work/microsmart/ubiquity
   ~/projects
   ~/vagrant
 )
