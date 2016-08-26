@@ -59,3 +59,6 @@ export ANSIBLE_HOSTS=~/Developer/ansible/hosts
 export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1_1
 export PATH=$PATH:/Applications/Genymotion\ Shell.app/Contents/MacOS:/Applications/Genymotion.app/Contents/MacOS
+
+# added by travis gem
+[ -f /Users/diraulo/.travis/travis.sh ] && source /Users/diraulo/.travis/travis.sh
