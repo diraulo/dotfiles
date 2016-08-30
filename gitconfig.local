@@ -9,8 +9,15 @@
 [pretty]
   colored = format:%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [alias]
-  s = status -s
+  b = branch
+  dc = diff --cached
+  di = diff
+  fo = fetch origin
+  fu = fetch upstream
   lg = log --oneline --decorate --graph --all --pretty=colored
+  pom = push origin master
+  s = status -s
+  amend = commit --amend
 [credential]
   helper = cache --timeout=3600
 [commit]
