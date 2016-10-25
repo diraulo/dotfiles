@@ -62,3 +62,6 @@ export PATH=$PATH:/Applications/Genymotion\ Shell.app/Contents/MacOS:/Applicatio
 
 # added by travis gem
 [ -f /Users/diraulo/.travis/travis.sh ] && source /Users/diraulo/.travis/travis.sh
+
+# QT Bin path
+export PATH="/usr/local/Cellar/qt5/5.7.0/bin:$PATH"
