@@ -1,7 +1,7 @@
 [user]
   name = Raoul DIFFOUO
   email = diraulo@gmail.com
-  signingkey = F812EC9A
+  signingkey = F9EE2CDC21D19C0E
 [rerere]
   enabled = true
 [http]
