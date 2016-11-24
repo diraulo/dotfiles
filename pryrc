@@ -25,3 +25,7 @@ if defined? Rails
     "(#{colored_environment_name}) #{obj}:#{nest_level}> "
   end
 end
+
+def cls
+  system 'clear'
+end
