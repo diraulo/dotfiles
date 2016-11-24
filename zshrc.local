@@ -65,3 +65,6 @@ export PATH=$PATH:/Applications/Genymotion\ Shell.app/Contents/MacOS:/Applicatio
 
 # QT Bin path
 export PATH="/usr/local/Cellar/qt5/5.7.0/bin:$PATH"
+
+### Added by the Bluemix CLI
+source /usr/local/Bluemix/bx/zsh_autocomplete
