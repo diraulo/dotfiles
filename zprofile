@@ -34,3 +34,6 @@ if [[ "$TERM_PROGRAM" == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]]; then
     # Tell the terminal about the initial directory.
     update_terminal_cwd
 fi
+
+# Add ssh identity to authentication agent
+ssh-add -A 2>/dev/null;
