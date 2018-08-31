@@ -1,12 +1,13 @@
 # Unix
 alias ls='ls -G'
 alias ll='ls -lahG'
-
+alias d='date'
 alias ...='cd ../..'
 alias h='cd ~'
 alias c='clear'
 
 alias hibernate='sudo pm-hibernate'
+
 alias tagrails='ctags -R --exclude=.git --exclude=log --exclude=app/assets --exclude=vendor'
 
 # Git
@@ -14,14 +15,29 @@ alias git='hub'
 
 # Ruby, Rails
 alias be="bundle exec"
-# alias rake="be rake"
-alias rspec="be rspec"
-alias cucumber="be cucumber"
-alias dbmigrate="be rake db:migrate && be rake db:test:prepare"
-alias dbrollback="be rake db:rollback"
+
+alias rdbc="be rake db:create"
+alias rdbd="be rake db:drop"
+alias rdbm="be rake db:migrate && be rake db:test:prepare"
+alias rdbr="be rake db:rollback"
+alias rdbs="be rake db:setup"
 alias rg="rails generate"
 alias rr="rails runner"
 alias rc="rails console"
 
+# alias rake="be rake"
+# alias rspec="be rspec"
+# alias cucumber="be cucumber"
+
 #thefuck
 eval $(thefuck --alias)
+
+# Atom
+alias a="atom"
+alias ac="atom ."
+
+# Python
+alias p='python3'
+
+# eos
+alias cleos='docker exec eosio /opt/eosio/bin/cleos --wallet-url http://localhost:8899'
