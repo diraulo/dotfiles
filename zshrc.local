@@ -26,8 +26,8 @@ ruby_version() {
 }
 
 # Update prompt, right prompt includes ruby version and current time
-export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) $ '
-RPROMPT='%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} [⌚%{$fg_bold[red]%}%t%{$reset_color%}]'
+# export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) $ '
+# RPROMPT='%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} [⌚%{$fg_bold[red]%}%t%{$reset_color%}]'
 
 # Fish shell like syntax highlighting for Zsh.
 # https://github.com/zsh-users/zsh-syntax-highlighting
