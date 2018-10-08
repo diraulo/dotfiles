@@ -13,22 +13,6 @@ cdpath=(
   ~/vagrant
 )
 
-# Function returns ruby version
-ruby_version() {
-  typeset -g ruby_v='ruby '
-  if which rvm-prompt &> /dev/null; then
-    echo -n "ruby-"; rvm-prompt i v g
-  else
-    if which rbenv &> /dev/null; then
-      echo -n "ruby-"; rbenv version-name
-    fi
-  fi
-}
-
-# Update prompt, right prompt includes ruby version and current time
-# export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) $ '
-# RPROMPT='%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} [⌚%{$fg_bold[red]%}%t%{$reset_color%}]'
-
 # Fish shell like syntax highlighting for Zsh.
 # https://github.com/zsh-users/zsh-syntax-highlighting
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
