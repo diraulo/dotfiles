@@ -39,6 +39,9 @@ fi
 # Haskell
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 
+# Add yarn global bin to PATH
+export PATH="$(yarn global bin):$PATH"
+
 # Ansible
 export ANSIBLE_HOSTS=~/Developer/ansible/hosts
 
