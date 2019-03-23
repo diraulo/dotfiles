@@ -8,7 +8,28 @@
 " call togglebg#map("<F5>")
 
 " = Github colorscheme
-colorscheme github
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
+" colorscheme github
+" highlight NonText guibg=#060606
+" highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
+" if you use airline / lightline
+" let g:airline_theme = "github"
+" let g:lightline = { 'colorscheme': 'github' }
+
+"set cursorcolumn
+"hi CursorColumn ctermbg=254 guibg=lightgrey
+
+"let &t_SI.="\e[5 q"
+"let &t_SR.="\e[4 q"
+"let &t_EI.="\e[1 q"
+
+" set Vim-specific sequences for RGB colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+set background=dark
+colorscheme spacemacs-theme
