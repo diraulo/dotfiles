@@ -30,7 +30,7 @@ alias rc="rails console"
 # alias cucumber="be cucumber"
 
 #thefuck
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 
 # Atom
 alias a="atom"
@@ -41,3 +41,6 @@ alias p='python3'
 
 # eos
 alias cleos='docker exec eosio /opt/eosio/bin/cleos --wallet-url http://localhost:8899'
+
+# SpaceVim
+alias svim='vim -u ~/.SpaceVim/vimrc'

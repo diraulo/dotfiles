@@ -1,5 +1,7 @@
 export PATH="./bin:$PATH"
 
+export LC_ALL=en_US.UTF-8
+
 # Configure cdpath
 cdpath=(
   ~
@@ -45,30 +47,22 @@ export PATH="$(yarn global bin):$PATH"
 # Ansible
 export ANSIBLE_HOSTS=~/Developer/ansible/hosts
 
-# Java
-export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1_1
-export PATH=$PATH:/Applications/Genymotion\ Shell.app/Contents/MacOS:/Applications/Genymotion.app/Contents/MacOS
-
 # added by travis gem
 [ -f /Users/diraulo/.travis/travis.sh ] && source /Users/diraulo/.travis/travis.sh
-
-# QT Bin path
-export PATH="/usr/local/Cellar/qt5/5.7.0/bin:$PATH"
-
-### Added by the Bluemix CLI
-source /usr/local/Bluemix/bx/zsh_autocomplete
 
 # Terminal History file
 HISTFILE="${HOME}/.zsh_history"
 HISTSIZE=5000
 SAVEHIST=5000
-export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 
 # SML
 export PATH="$PATH:/usr/local/smlnj/bin"
 
 # Spaceship configs
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
+
 SPACESHIP_PROMPT_ORDER=(
   time        # Time stampts section (Disabled)
   user          # Username section
