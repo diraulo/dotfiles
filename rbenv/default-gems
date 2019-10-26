@@ -1,9 +1,10 @@
 bundler
-rails
-rubocop
-rubocop-rspec
 haml_lint
+rails
 rails_best_practices
 rsense
-solargraph
+rubocop
+rubocop-performance
+rubocop-rspec
 rufo
+solargraph
