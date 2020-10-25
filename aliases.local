@@ -44,3 +44,13 @@ alias cleos='docker exec eosio /opt/eosio/bin/cleos --wallet-url http://localhos
 
 # SpaceVim
 alias svim='vim -u ~/.SpaceVim/vimrc'
+
+# Python
+alias python='python3'
+alias pip='pip3'
+
+$ Docker
+alias db='docker build'
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+alias dcud='docker-compose up -d'
