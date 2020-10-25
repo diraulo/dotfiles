@@ -31,7 +31,15 @@ export TESTING_MAKERS=working
 
 # Load asdf
 . $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit
+
+# AWS
+export PATH="/usr/local/opt/awscli@1/bin:$PATH"
 
 # Haskell
 export PATH="$HOME/Library/Haskell/bin:$PATH"
