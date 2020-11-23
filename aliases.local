@@ -16,16 +16,16 @@ alias git='hub'
 # Ruby, Rails
 alias be="bundle exec"
 
-alias rdbc="be rake db:create"
-alias rdbd="be rake db:drop"
-alias rdbm="be rake db:migrate && be rake db:test:prepare"
-alias rdbr="be rake db:rollback"
-alias rdbs="be rake db:setup"
+alias rdbc="be rails db:create"
+alias rdbd="be rails db:drop"
+alias rdbm="be rails db:migrate && be rails db:test:prepare"
+alias rdbr="be rails db:rollback"
+alias rdbs="be rails db:setup"
 alias rg="rails generate"
 alias rr="rails runner"
 alias rc="rails console"
 
-# alias rake="be rake"
+# alias rails="be rails"
 # alias rspec="be rspec"
 # alias cucumber="be cucumber"
 
@@ -49,7 +49,7 @@ alias svim='vim -u ~/.SpaceVim/vimrc'
 alias python='python3'
 alias pip='pip3'
 
-$ Docker
+# Docker
 alias db='docker build'
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
