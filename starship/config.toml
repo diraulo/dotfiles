@@ -1,0 +1,21 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Set timeout for commands executed by starship
+command_timeout = 1000
+
+# Replace the "❯" symbol in the prompt with the "➜"
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[✖](bold red) "
+
+# Replace the default elixir symbol
+[elixir]
+symbol = "🔮 "
+
+# # Replace the default Node.js symbol
+[nodejs]
+format = "via [ $version](bold green) "
+
+[gcloud]
+disabled = true
