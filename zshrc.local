@@ -1,18 +1,18 @@
-export PATH="./bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+source /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 export LC_ALL=en_US.UTF-8
+
+# Disable Homebrew analytics https://docs.brew.sh/Analytics
+unset HOMEBREW_NO_ANALYTICS
 
 # Configure cdpath
 cdpath=(
   ~
   ~/Developer
-  ~/Developer/agileventures
-  ~/Developer/ca-labs
-  ~/Developer/craftacademy
-  ~/Developer/diraulinc
-  ~/Developer/thinkbots
-  ~/projects
-  ~/vagrant
+  # Add additional folders as needed
 )
 
 # Fish shell like syntax highlighting for Zsh.
@@ -29,74 +29,39 @@ source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 export TERM=screen-256color-bce
 export TESTING_MAKERS=working
 
-# Load asdf
-. $HOME/.asdf/asdf.sh
-
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
+
 # initialise completions with ZSH's compinit
 autoload -Uz compinit
 compinit
 
-# AWS
-export PATH="/usr/local/opt/awscli@1/bin:$PATH"
+# # Prepend programming language binaries via ASDF shims
+# PATH="$HOME/.asdf/bin:$PATH"
+# PATH="$HOME/.asdf/shims:$PATH"
 
-# Haskell
-export PATH="$HOME/Library/Haskell/bin:$PATH"
+# # Prepend Homebrew binaries
+# PATH="$BREW/bin:$PATH"
 
 # Add yarn global bin to PATH
-export PATH="$(yarn global bin):$PATH"
+PATH="$(yarn global bin):$PATH"
 
-# Ansible
-export ANSIBLE_HOSTS=~/Developer/ansible/hosts
+# SML
+PATH="$PATH:/usr/local/smlnj/bin"
 
-# added by travis gem
-[ -f /Users/diraulo/.travis/travis.sh ] && source /Users/diraulo/.travis/travis.sh
+# Doom Emacs
+PATH="$HOME/.emacs.d/bin:$PATH"
+
+export PATH
 
 # Terminal History file
 HISTFILE="${HOME}/.zsh_history"
 HISTSIZE=5000
 SAVEHIST=5000
 
-# SML
-export PATH="$PATH:/usr/local/smlnj/bin"
+# Starship terminal prompt
+export STARSHIP_CONFIG=~/.starship/config.toml
+eval "$(starship init zsh)"
 
-# Spaceship configs
-# Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
-
-SPACESHIP_PROMPT_ORDER=(
-  time        # Time stampts section (Disabled)
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  hg            # Mercurial section (hg_branch  + hg_status)
-  # package     # Package version (Disabled)
-  node          # Node.js section
-  ruby          # Ruby section
-  elixir        # Elixir section
-  # xcode       # Xcode section (Disabled)
-  swift         # Swift section
-  golang        # Go section
-  php           # PHP section
-  rust          # Rust section
-  haskell       # Haskell Stack section
-  # julia       # Julia section (Disabled)
-  # docker      # Docker section (Disabled)
-  aws           # Amazon Web Services section
-  venv          # virtualenv section
-  conda         # conda virtualenv section
-  pyenv         # Pyenv section
-  # dotnet        # .NET section
-  # ember       # Ember.js section (Disabled)
-  kubecontext   # Kubectl context section
-  exec_time     # Execution time
-  line_sep      # Line break
-  battery       # Battery level and status
-  # vi_mode     # Vi-mode indicator (Disabled)
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
