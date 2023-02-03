@@ -18,12 +18,14 @@ env_colors = {
 }
 
 if defined? Rails
-  Pry.config.prompt = proc do |obj, nest_level, _|
-    color = env_colors.fetch(Rails.env, color_escape_codes[:reset])
-    colored_environment_name =
-"#{color}#{Rails.env}#{color_escape_codes[:reset]}"
-    "(#{colored_environment_name}) #{obj}:#{nest_level}> "
-  end
+  color = env_colors.fetch(Rails.env, color_escape_codes[:reset])
+  colored_environment_name = "#{color}#{Rails.env}#{color_escape_codes[:reset]}"
+
+  Pry.config.prompt = Pry::Prompt.new(
+    "custom",
+    "my_custom_prompt",
+    [proc { |obj, nest_level, _| "(#{colored_environment_name}) #{obj}:#{nest_level}> " }]
+  )
 end
 
 def cls
