@@ -10,9 +10,6 @@ alias hibernate='sudo pm-hibernate'
 
 alias tagrails='ctags -R --exclude=.git --exclude=log --exclude=app/assets --exclude=vendor'
 
-# Git
-alias git='hub'
-
 # Ruby, Rails
 alias be="bundle exec"
 
@@ -32,22 +29,12 @@ alias rc="rails console"
 #thefuck
 # eval $(thefuck --alias)
 
-# Atom
-alias a="atom"
-alias ac="atom ."
-
-# Python
-alias p='python3'
-
-# eos
-alias cleos='docker exec eosio /opt/eosio/bin/cleos --wallet-url http://localhost:8899'
-
 # SpaceVim
 alias svim='vim -u ~/.SpaceVim/vimrc'
 
 # Python
-alias python='python3'
-alias pip='pip3'
+# alias python='python3'
+# alias pip='pip3'
 
 # Docker
 alias db='docker build'
