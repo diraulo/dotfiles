@@ -2,6 +2,8 @@
   name = Raoul DIFFOUO
   email = diraulo@gmail.com
   signingkey = F9EE2CDC21D19C0E
+[core]
+  editor=emacsclient
 [rerere]
   enabled = true
 [http]
@@ -30,9 +32,3 @@
   gpgsign = true
 [diff]
   compactionHeuristic = 1
-[pager]
-  log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-  show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-  diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-[interactive]
-  diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
