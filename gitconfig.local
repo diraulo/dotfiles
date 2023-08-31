@@ -3,7 +3,8 @@
   email = diraulo@gmail.com
   signingkey = F9EE2CDC21D19C0E
 [core]
-  editor=emacsclient
+  editor="zed --wait"
+  pager = delta
 [rerere]
   enabled = true
 [http]
@@ -32,3 +33,20 @@
   gpgsign = true
 [diff]
   compactionHeuristic = 1
+  colorMoved = default
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  features = decorations
+  syntax-theme = Nord
+  plus-style = syntax "#003800"
+  minus-style = syntax "#3f0001"
+  navigate = true
+
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+  hunk-header-decoration-style = cyan box ul
