@@ -1,0 +1,33 @@
+#!/bin/sh
+
+brew bundle --file=- <<EOF
+brew "watch"
+
+brew "bat"
+brew "starship"
+
+cask "adobe-acrobat-reader"
+cask "dbngin"
+cask "keybase"
+cask "notion"
+cask "notion-calendar"
+cask "orbstack"
+cask "raycast"
+cask "slack"
+cask "tableplus"
+cask "warp"
+cask "zed"
+cask "zoom"
+EOF
+
+fancy_echo "Cleaning up old Homebrew formulae ..."
+brew cleanup
+
+# Install more programming languages
+add_or_update_asdf_plugin "erlang" "https://github.com/asdf-vm/asdf-erlang.git"
+add_or_update_asdf_plugin "elixir" "https://github.com/asdf-vm/asdf-elixir.git"
+
+if [ -r "$HOME/.rcrc" ]; then
+  fancy_echo "Updating dotfiles ..."
+  rcup
+fi
