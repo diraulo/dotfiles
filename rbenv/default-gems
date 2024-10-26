@@ -1,10 +1,9 @@
 bundler
-haml_lint
 rails
 rails_best_practices
-rsense
 rubocop
 rubocop-performance
 rubocop-rspec
-rufo
 solargraph
+standard
+amazing_print

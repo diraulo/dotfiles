@@ -1,7 +1,7 @@
 [user]
   name = Raoul DIFFOUO
   email = diraulo@gmail.com
-  signingkey = F9EE2CDC21D19C0E
+  signingkey = 56BB72FBE171AFD1
 [core]
   editor="zed --wait"
   pager = delta
@@ -15,7 +15,7 @@
   ap  = add -p
   b   = branch
   cod = checkout develop
-  com = checkout master
+  com = checkout main
   cos = checkout staging
   cob = checkout -b
   dc  = diff --cached
@@ -24,6 +24,9 @@
   fu  = fetch upstream
   lg  = log --oneline --decorate --graph --all --pretty=colored
   pom = push origin master
+  mom = merge origin/main
+  rom = rebase origin/main
+  riom = rebase -i origin/main
   s = status -s
   stu = status -uno
   amend = commit --amend

@@ -49,11 +49,12 @@ compinit
 # Add yarn global bin to PATH
 PATH="$(yarn global bin):$PATH"
 
-# SML
-PATH="$PATH:/usr/local/smlnj/bin"
+# Elixir/Erlang
+# Enable iex shell history
+export ERL_AFLAGS="-kernel shell_history enabled"
 
-# Doom Emacs
-PATH="$HOME/.emacs.d/bin:$PATH"
+# Rust
+PATH="$HOME/.cargo/bin:$PATH"
 
 export PATH
 

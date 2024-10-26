@@ -1,3 +1,6 @@
+require "amazing_print"
+AmazingPrint.pry!
+
 # .pryrc
 color_escape_codes = {
   black: "\033[0;30m",
