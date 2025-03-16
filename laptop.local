@@ -4,7 +4,10 @@ brew bundle --file=- <<EOF
 brew "watch"
 
 brew "bat"
+brew "git-delta"
+brew "overmind"
 brew "starship"
+brew "vips"
 
 cask "adobe-acrobat-reader"
 cask "dbngin"
