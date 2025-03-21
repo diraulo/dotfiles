@@ -1,10 +1,6 @@
 PATH="$HOME/.bin:$PATH"
 PATH="$HOME/.local/bin:$PATH"
-PATH="/Users/Shared/DBngin/postgresql/16.4/bin:$PATH"
-PATH="/Users/Shared/DBngin/redis/7.0.0/bin:$PATH"
-# export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 export PATH
 
