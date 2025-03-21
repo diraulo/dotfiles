@@ -9,6 +9,10 @@ brew "overmind"
 brew "starship"
 brew "vips"
 
+brew "php"
+brew "composer"
+brew "pnpm"
+
 cask "adobe-acrobat-reader"
 cask "dbngin"
 cask "keybase"
@@ -16,19 +20,20 @@ cask "notion"
 cask "notion-calendar"
 cask "orbstack"
 cask "raycast"
-cask "slack"
 cask "tableplus"
-cask "warp"
 cask "zed"
-cask "zoom"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup
 
 # Install more programming languages
-add_or_update_asdf_plugin "erlang" "https://github.com/asdf-vm/asdf-erlang.git"
+add_or_update_asdf_plugin "awscli"
+add_or_update_asdf_plugin "terraform"
 add_or_update_asdf_plugin "elixir" "https://github.com/asdf-vm/asdf-elixir.git"
+add_or_update_asdf_plugin "erlang" "https://github.com/asdf-vm/asdf-erlang.git"
+add_or_update_asdf_plugin "php" "https://github.com/asdf-community/asdf-php.git"
+add_or_update_asdf_plugin "python"
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
